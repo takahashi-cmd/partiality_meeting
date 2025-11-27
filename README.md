@@ -5,7 +5,10 @@
 - 開発体系：チーム開発（ハッカソン）
 - 制作期間：2ヶ月
 - メンバー：5名
-- 担当ポジション：バックエンド
+
+## 自分の担当
+「バックエンド」として、DB設計、ルーティング機能、CRUD機能の作成を行った。
+また、チームのサブリーダーとして、バックエンドメンバーのプルリクエストのレビュー、打ち合わせの議事録作成を行った。
 
 ## 背景
 「趣味を話したいけれど、同じ趣味を持っている人がいない」、「熱量がすごくて、周囲の人から引かれるかもしれない」等の不安を抱えている人に対して、気軽にチャンネルを立ち上げ、共通の趣味を持つ人と繋がれる場を提供したいと思い、本チャットアプリを作成した。
@@ -74,28 +77,34 @@ Flaskのポート番号は「55000」に設定している。
 http://localhost:55000/
 ```
 
-
-
-### ディレクトリ構成
+## ディレクトリ・ファイル構成
 ```
 .
-├── ChatApp              # サンプルアプリ用ディレクトリ
-│   ├── __init__.py
-│   ├── app.py
-│   ├── models.py
-│   ├── static          # 静的ファイル用ディレクトリ
-│   ├── templates       # Template(HTML)用ディレクトリ
+├── ChatApp              # 本アプリディレクトリ
+│   ├── __init__.py      # パッケージ化のための空ファイル
+│   ├── app.py           # 本アプリの起動、ルーティングのためのファイル
+│   ├── models.py        # テーブル定義のためのファイル
+│   ├── static           # 静的ファイル用ディレクトリ
+│   ├── templates        # Template(HTML)用ディレクトリ
 │   └── util
 ├── Docker
 │   ├── Flask
-│   │   └── Dockerfile # Flask(Python)用Dockerファイル
+│   │   └── Dockerfile   # Flask(Python)用Dockerファイル
 │   └── MySQL
-│       ├── Dockerfile  # MySQL用Dockerファイル
-│       ├── init.sql    # MySQL初期設定ファイル
-│       └── my.cnf
+│       ├── Dockerfile   # MySQL用Dockerファイル
+│       ├── init.sql     # MySQL初期設定ファイル
+│       └── my.cnf       # MySQL設定ファイル
 ├── .env.example         # 環境変数ファイル（.env）を作成する為のサンプルファイル
 ├── docker-compose.yml   # Docker-composeファイル
 └── requirements.txt     # 使用モジュール記述ファイル
+```
 
-```# hackathon-Gteam
+## 機能一覧
+
+## 画面遷移図
+
+## DB設計
+
+
+## 
 
