@@ -131,6 +131,7 @@ http://localhost:55000/
 |  | カレンダー共有機能 | ✕ |
 
 ## 画面遷移図
+<img width="auto" height="auto" alt="Image" src="https://github.com/user-attachments/assets/a1acb01b-f980-4953-9e3e-52f3e357c98a" />
 
 ## DB設計
 ### ER図
@@ -143,4 +144,5 @@ http://localhost:55000/
 ### ER図の考え方
 
 ー以上ー
+
 
