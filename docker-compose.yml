@@ -1,8 +1,8 @@
 # db(MySQL),app(Flask)のコンテナを作成
 services:
   db:
-    # コンテナ名をmysqlに設定
-    container_name: MySQL
+    # コンテナ名をMySQL_dbに設定
+    container_name: MySQL_db
     # MySQLのDockerfileをビルドする
     build:
       # ビルドコンテキストはカレントディレクトリ
@@ -38,8 +38,8 @@ services:
       start_period: 30s
 
   app:
-    # コンテナ名をFlaskに設定
-    container_name: Flask
+    # コンテナ名をFlask_APPに設定
+    container_name: Flask_APP
     # FlaskのDockerfileをビルドする
     build:
       # ビルドコンテキストはカレントディレクトリ

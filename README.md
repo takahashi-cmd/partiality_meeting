@@ -35,12 +35,12 @@
 
 ## スタート画面、ログイン後の画面
 **スタート画面**
-
+<img width="auto" height="auto" alt="Image" src="https://github.com/user-attachments/assets/621b00f4-fe42-4eef-a9bc-88f300786a85" />
 
 **ログイン後の画面**
+<img width="auto" height="auto" alt="Image" src="https://github.com/user-attachments/assets/a44eeefd-156d-4dd9-915c-708faf74bdf1" />
 
 ## アプリの起動・終了方法
-
 
 ### 1) 環境変数ファイル（.env）の作成
 次のコマンドを入力して、ローカル環境に環境変数ファイル（.env）を作成する。
@@ -143,6 +143,12 @@ http://localhost:55000/
 <img width="auto" height="auto" alt="Image" src="https://github.com/user-attachments/assets/a1acb01b-f980-4953-9e3e-52f3e357c98a" />
 
 ## DB設計
+### ER図の考え方
+ER図の考え方を以下のとおり示す。
+- usersテーブルとchannelsテーブルを紐づけ、ユーザーに自身が作成したチャンネルの編集・削除等の権限を与える。
+- channelsテーブルとhobby_genresテーブルを紐づけ、ユーザーがチャンネル一覧から趣味のジャンル検索をできるようにする。趣味のジャンルは開発側であらかじめ設定し、検索バーからブルダウン形式で選択することを想定する。
+- user_id,channels_id,message_idの型は、セキュリティ強化の観点から、uuid4を使用することとし、VARCHAR(36)を使用する。
+
 ### ER図
 **1)論理モデル**
 <img width="auto" height="auto" alt="Image" src="https://github.com/user-attachments/assets/58e4d43d-ebbb-4477-a51d-11778235c00a" />
@@ -150,9 +156,5 @@ http://localhost:55000/
 **2)物理モデル**
 <img width="auto" height="auto" alt="Image" src="https://github.com/user-attachments/assets/e5164785-7eb1-45f8-8ae2-b1c3b1d4a081" />
 
-### ER図の考え方
-
 ー以上ー
-
-
 
